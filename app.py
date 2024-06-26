@@ -20,7 +20,7 @@ def index():
         try:
             if request.form:
                 data = dict(request.form)
-                data = [list(map(float,data))]
+
                 response = prediction.form_response(data)
                 return render_template("index.html",response=response)
             
@@ -29,7 +29,7 @@ def index():
                 return jsonify(response)
         except Exception as e:
             print(e)
-            error = {"error":"Something went wrong!! Try again later"}
+            error = {"error": e}
             return render_template("404.html",error=error)
     else:
         return render_template("index.html")
