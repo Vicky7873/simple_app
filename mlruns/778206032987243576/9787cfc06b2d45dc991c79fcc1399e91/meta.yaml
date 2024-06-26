@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/778206032987243576/9787cfc06b2d45dc991c79fcc1399e91/artifacts
+end_time: 1719408311198
+entry_point_name: ''
+experiment_id: '778206032987243576'
+lifecycle_stage: active
+run_id: 9787cfc06b2d45dc991c79fcc1399e91
+run_name: bedecked-zebra-716
+run_uuid: 9787cfc06b2d45dc991c79fcc1399e91
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719408309305
+status: 3
+tags: []
+user_id: bhikipallai

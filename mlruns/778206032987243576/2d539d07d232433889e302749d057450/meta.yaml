@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/778206032987243576/2d539d07d232433889e302749d057450/artifacts
+end_time: 1719410298473
+entry_point_name: ''
+experiment_id: '778206032987243576'
+lifecycle_stage: active
+run_id: 2d539d07d232433889e302749d057450
+run_name: sedate-bat-66
+run_uuid: 2d539d07d232433889e302749d057450
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719410296787
+status: 3
+tags: []
+user_id: bhikipallai
