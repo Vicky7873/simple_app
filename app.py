@@ -3,6 +3,7 @@ import os
 import yaml
 import joblib
 import numpy as np
+from prediction_service import prediction
 
 
 
