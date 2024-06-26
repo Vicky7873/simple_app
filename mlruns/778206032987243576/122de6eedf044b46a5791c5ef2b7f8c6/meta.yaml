@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/778206032987243576/122de6eedf044b46a5791c5ef2b7f8c6/artifacts
+end_time: 1719411612247
+entry_point_name: ''
+experiment_id: '778206032987243576'
+lifecycle_stage: active
+run_id: 122de6eedf044b46a5791c5ef2b7f8c6
+run_name: mlops
+run_uuid: 122de6eedf044b46a5791c5ef2b7f8c6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719411612234
+status: 3
+tags: []
+user_id: bhikipallai
