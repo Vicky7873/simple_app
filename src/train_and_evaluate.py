@@ -11,6 +11,8 @@ import json
 import sys
 import warnings
 
+import mlflow
+
 def evaluate_metrics(actual, predicted):
     rmse = np.sqrt(mean_squared_error(actual, predicted))
     mae = mean_absolute_error(actual, predicted)
@@ -39,11 +41,19 @@ def train_and_evaluate(config_path):
     train_x = train.drop([target],axis=1)
     test_x = test.drop([target],axis=1)
 
-    lr = ElasticNet(
-        alpha=alpha,
-        l1_ratio=l1_ratio,
-        random_state=random_state
-    )
+    mlflow_config = config["mlflow_config"]
+    remote_server_uri = mlflow_config["remote_server_uri"]
+
+    mlflow.set_tracking_uri(remote_server_uri)
+    mlflow.set_experiment(mlflow_config["experiment_name"])
+
+    with mlflow.start_run(run_name=mlflow_config["run_name"]) as mlflow_run:
+
+        lr = ElasticNet(
+            alpha=alpha,
+            l1_ratio=l1_ratio,
+            random_state=random_state
+        )
 
     lr.fit(train_x,train_y)
     predicted_qualities = lr.predict(test_x)
