@@ -19,7 +19,7 @@
         "min": 0.012,
         "max": 0.611
     },
-    "free sulfur_dioxide": {
+    "free_sulfur_dioxide": {
         "min": 1.0,
         "max": 72.0
     },
